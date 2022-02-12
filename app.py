@@ -1,12 +1,13 @@
 import os
 import dash
+import dash_auth
 import dash_core_components as dcc
 import dash_html_components as html
 import plotly.express as px
 import pandas as pd
 from dash.dependencies import input,output
 
-USERNAME_PASSWORD_PAIRS=[["shabeeb","Fazna@3148"],["fazna","Fazna@3148"]]
+
 
 app = dash.Dash(__name__)
 auth=dash_auth.BasicAuth(app,USERNAME_PASSWORD_PAIRS)
