@@ -5,6 +5,7 @@ dash-table
 dask
 Flask
 Flask-Compress
+gunicorn
 numpy
 pandas
 pip-tools
