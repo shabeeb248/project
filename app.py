@@ -12,6 +12,7 @@ from collections import Counter
 
 
 app = dash.Dash(__name__)
+server = app.server
 
 df = pd.read_csv('https://raw.githubusercontent.com/shabeeb248/datas/main/ipl.csv')
 
