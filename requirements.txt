@@ -8,10 +8,13 @@ dash-bio
 dash-core-components
 dash-html-components
 dash-table
+dash.dependencies
+collections
 Flask
 Flask-Compress
 future
 futures
+numpy
 google-api-core
 google-api-python-client
 google-auth
@@ -26,6 +29,7 @@ MarkupSafe
 packaging
 pandas
 plotly
+plotly.graph_objects
 protobuf
 pyasn1
 pyasn1-modules
