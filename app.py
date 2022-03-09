@@ -15,6 +15,7 @@ app = dash.Dash(__name__)
 server = app.server
 
 df = pd.read_csv('https://raw.githubusercontent.com/shabeeb248/datas/main/ipl.csv')
+df=df.dropna()
 
 
 
@@ -42,7 +43,7 @@ app.layout = html.Div(children=[
           html.Div([
                     html.Label(['Choose a team:'],style={'font-weight': 'bold'}),
             dcc.Dropdown(
-                np.append(df['winner'].unique().dropna(),"All teams"),
+                np.append(df['winner'].unique(),"All teams"),
                 id='team',
                 value="All teams"
             )
