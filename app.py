@@ -42,7 +42,7 @@ app.layout = html.Div(children=[
           html.Div([
                     html.Label(['Choose a team:'],style={'font-weight': 'bold'}),
             dcc.Dropdown(
-                np.append(df['winner'].unique(),"All teams"),
+                np.append(df['winner'].unique().dropna(),"All teams"),
                 id='team',
                 value="All teams"
             )
